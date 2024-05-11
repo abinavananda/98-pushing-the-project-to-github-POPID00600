@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">How to push a project to git</h1>
+    <p>
+        <h2>1.Create a remote, empty folder/repository on Github.</h2><br>
+        1.Login to your Github account.<br>
+        2.At the top right of any Github page, you should see a '+' icon. Click that, then select 'New Repository'.
+        <br>
+        3.Give your repository a name--ideally the same name as your local project. If I'm building a travel application, its folder will be called 'travel-app' on my computer, and 'travel-app' will be the Github repository name as well.
+        <br>
+        4.Click 'Create Repository'. The next screen you see will be important, so don't close it.
+        <br>
+        <h2>2. Connect your local project folder to your empty folder/repository on Github.</h2><br>
+        1.The screen you should be seeing now on Github is titled 'Quick setup — if you’ve done this kind of thing before'.
+        <br>
+        2.Copy the link in the input right beneath the title, it should look something like this: https://github.com/yourname/yourproject.git
+        This is the web address that your local folder will use to push its contents to the remote folder on Github.
+        <br>
+        3.Go back to your project in the terminal/command line.
+        <br>
+        4.In your terminal/command line, type git remote add origin [copied web address] Example: git remote add origin https://github.com/yourname/yourproject.git
+        <br>
+        5.Push your branch to Github: git push -u origin main
+        <br>
+        6. Go back to the folder/repository screen on Github that you just left, and refresh it. The title 'Quick setup — if you’ve done this kind of thing before' should disappear, and you should see your files there.
+    </p>
+</body>
+</html>
